@@ -1,0 +1,10 @@
+devserver ansible_connection=local
+
+[webservers]
+devserver
+
+[dbservers]
+devserver
+
+[springserver]
+devserver
