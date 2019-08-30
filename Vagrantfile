@@ -55,6 +55,7 @@ Vagrant.configure("2") do |config|
      # Display the VirtualBox GUI when booting the machine
      # vb.gui = true
      vb.memory = "2048"
+     vb.customize [ "modifyvm", :id, "--uartmode1", "disconnected" ]
    end
 
    config.vm.define "devserver" do |devserver|
